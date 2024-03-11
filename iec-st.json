@@ -1,0 +1,102 @@
+{
+    "for": {
+        "prefix": "for",
+        "body": [
+            "FOR $1 := $2 TO $3",
+            "DO",
+            "  $1",
+            "END_FOR"
+        ],
+        "description": "For-loop statement"
+    },
+    "forr": {
+        "prefix": "forr",
+        "body": [
+            "FOR $1 := $2 TO $3 BY -1",
+            "DO",
+            "  $1",
+            "END_FOR"
+        ],
+        "description": "For-loop reversed statement"
+    },
+    "repeat": {
+        "prefix": "repeat",
+        "body": [
+            "REPEAT",
+            "DO",
+            "  $1",
+            "UNTIL $2 END_REPEAT;"
+        ],
+        "description": "Repeat loop"
+    },
+    "while": {
+        "prefix": "while",
+        "body": [
+            "WHILE $1",
+            "DO",
+            "  $2",
+            "END_WHILE"
+        ],
+        "description": "While loop"
+    },
+    "if": {
+        "prefix": "if",
+        "body": [
+            "IF $1",
+            "THEN",
+            "  $2",
+            "END_IF"
+        ],
+        "description": "If statement"
+    },
+    "ife": {
+        "prefix": "ifee",
+        "body": [
+            "IF $1",
+            "THEN",
+            "  $2",
+            "ELSE",
+            "  $3",
+            "END_IF"
+        ],
+        "description": "If-else statement"
+    },
+    "ifee": {
+        "prefix": "ifee",
+        "body": [
+            "IF $1",
+            "THEN",
+            "  $2",
+            "ELSIF $3",
+            "  $4",
+            "ELSE",
+            "  $5",
+            "END_IF"
+        ],
+        "description": "If-elsif-else statement"
+    },
+    "ifo": {
+        "prefix": "ifo",
+        "body": [
+            "IF ${1:object}.Error",
+            "THEN",
+            "  $2",
+            "ELSIF NOT ${1:object}.Busy",
+            "  $3",
+            "END_IF"
+        ],
+        "description": "If object.Error elsif not object.Busy"
+    },
+    "case": {
+        "prefix": "case",
+        "body": [
+            "CASE $1",
+            "OF",
+            "  $2:",
+            "ELSE",
+            "  $3",
+            "END_CASE"
+        ],
+        "description": "Code snippet for case statement"
+    }
+}
