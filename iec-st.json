@@ -50,7 +50,7 @@
         "description": "If statement"
     },
     "ife": {
-        "prefix": "ifee",
+        "prefix": "ife",
         "body": [
             "IF $1",
             "THEN",
