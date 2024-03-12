@@ -42,7 +42,7 @@
     "if": {
         "prefix": "if",
         "body": [
-            "IF ${1:condition1}",
+            "IF ${1:condition}",
             "THEN",
             "  ${2:// todo: implement me}",
             "END_IF"
@@ -52,7 +52,7 @@
     "ife": {
         "prefix": "ife",
         "body": [
-            "IF ${1:condition1",
+            "IF ${1:condition}",
             "THEN",
             "  ${2:// todo: implement me}",
             "ELSE",
