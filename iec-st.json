@@ -2,9 +2,9 @@
     "for": {
         "prefix": "for",
         "body": [
-            "FOR $1 := $2 TO $3",
+            "FOR ${1:i} := ${2:start} TO ${3:end}",
             "DO",
-            "  $1",
+            "  ${4: // todo: implement me}",
             "END_FOR"
         ],
         "description": "For-loop statement"
@@ -12,9 +12,9 @@
     "forr": {
         "prefix": "forr",
         "body": [
-            "FOR $1 := $2 TO $3 BY -1",
+            "FOR ${1:i} := ${2:start} TO ${3:end} BY -1",
             "DO",
-            "  $1",
+            "  ${4: // todo: implement me}",
             "END_FOR"
         ],
         "description": "For-loop reversed statement"
@@ -24,17 +24,17 @@
         "body": [
             "REPEAT",
             "DO",
-            "  $1",
-            "UNTIL $2 END_REPEAT;"
+            "  ${2: // todo: implement me}",
+            "UNTIL ${1:condition} END_REPEAT;"
         ],
         "description": "Repeat loop"
     },
     "while": {
         "prefix": "while",
         "body": [
-            "WHILE $1",
+            "WHILE ${1:condition}",
             "DO",
-            "  $2",
+            "  ${2: // todo: implement me}",
             "END_WHILE"
         ],
         "description": "While loop"
@@ -42,9 +42,9 @@
     "if": {
         "prefix": "if",
         "body": [
-            "IF $1",
+            "IF ${1:condition1}",
             "THEN",
-            "  $2",
+            "  ${2: // todo: implement me}",
             "END_IF"
         ],
         "description": "If statement"
@@ -52,11 +52,11 @@
     "ife": {
         "prefix": "ife",
         "body": [
-            "IF $1",
+            "IF ${1:condition1",
             "THEN",
-            "  $2",
+            "  ${2: // todo: implement me}",
             "ELSE",
-            "  $3",
+            "  ${3: // todo: implement me}",
             "END_IF"
         ],
         "description": "If-else statement"
@@ -64,13 +64,13 @@
     "ifee": {
         "prefix": "ifee",
         "body": [
-            "IF $1",
+            "IF ${1:condition1}",
             "THEN",
-            "  $2",
-            "ELSIF $3",
-            "  $4",
+            "  ${2: // todo: implement me}",
+            "ELSIF ${3:condition2}",
+            "  ${4: // todo: implement me}",
             "ELSE",
-            "  $5",
+            "  ${5: // todo: implement me}",
             "END_IF"
         ],
         "description": "If-elsif-else statement"
@@ -80,9 +80,9 @@
         "body": [
             "IF ${1:object}.Error",
             "THEN",
-            "  $2",
+            "  ${2: // todo: implement me}",
             "ELSIF NOT ${1:object}.Busy",
-            "  $3",
+            "  ${3: // todo: implement me}",
             "END_IF"
         ],
         "description": "If object.Error elsif not object.Busy"
@@ -90,11 +90,14 @@
     "case": {
         "prefix": "case",
         "body": [
-            "CASE $1",
+            "CASE ${1:variable}",
             "OF",
-            "  $2:",
+            "  (* --------------------------------------------- *)",
+            "  ${2:1}:",
+            "  (* --------------------------------------------- *)",
+            "    ${3: // todo: implement me}",
             "ELSE",
-            "  $3",
+            "  ${4: // todo: implement me}",
             "END_CASE"
         ],
         "description": "Code snippet for case statement"
