@@ -1,6 +1,6 @@
 {
     "for": {
-        "prefix": "for",
+        "prefix": ["for"],
         "body": [
             "FOR ${1:i} := ${2:start} TO ${3:end}",
             "DO",
@@ -10,7 +10,7 @@
         "description": "For-loop statement"
     },
     "forr": {
-        "prefix": "forr",
+        "prefix": ["forr"],
         "body": [
             "FOR ${1:i} := ${2:start} TO ${3:end} BY -1",
             "DO",
@@ -20,7 +20,7 @@
         "description": "For-loop reversed statement"
     },
     "repeat": {
-        "prefix": "repeat",
+        "prefix": ["repeat"],
         "body": [
             "REPEAT",
             "DO",
@@ -30,7 +30,7 @@
         "description": "Repeat loop"
     },
     "while": {
-        "prefix": "while",
+        "prefix": ["while"],
         "body": [
             "WHILE ${1:condition}",
             "DO",
@@ -40,7 +40,7 @@
         "description": "While loop"
     },
     "if": {
-        "prefix": "if",
+        "prefix": ["if"],
         "body": [
             "IF ${1:condition}",
             "THEN",
@@ -50,7 +50,7 @@
         "description": "If statement"
     },
     "ife": {
-        "prefix": "ife",
+        "prefix": ["ife"],
         "body": [
             "IF ${1:condition}",
             "THEN",
@@ -62,7 +62,7 @@
         "description": "If-else statement"
     },
     "ifee": {
-        "prefix": "ifee",
+        "prefix": ["ifee"],
         "body": [
             "IF ${1:condition1}",
             "THEN",
@@ -76,7 +76,7 @@
         "description": "If-elsif-else statement"
     },
     "ifo": {
-        "prefix": "ifo",
+        "prefix": ["ifo"],
         "body": [
             "IF ${1:object}.Error",
             "THEN",
@@ -88,7 +88,7 @@
         "description": "If object.Error elsif not object.Busy"
     },
     "case": {
-        "prefix": "case",
+        "prefix": ["case"],
         "body": [
             "CASE ${1:variable}",
             "OF",
