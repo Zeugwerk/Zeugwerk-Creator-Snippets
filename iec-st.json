@@ -1,4 +1,11 @@
 {
+    "AT-Declaration": {
+        "prefix": ["AT%*"],
+        "body": [
+            "${1:variable} AT %${2|I,Q}* : ${3|BOOL,BYTE,WORD,DWORD,SINT,USINT,INT,UINT,DINT,UDINT,REAL};"
+        ],
+        "description": "Bind new project variable to a flexible address"
+    },    
     "for": {
         "prefix": ["for"],
         "body": [
