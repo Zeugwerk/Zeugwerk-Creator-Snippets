@@ -8,7 +8,7 @@
         "description": "attribute pragma"
     },
     "class": {
-        "prefix": ["attribute","{attribute}"],
+        "prefix": ["class"],
         "scope" : "declaration",
         "body": [
             "{attribute 'no_explicit_call' := 'This FB is a CLASS and must be accessed using methods and/or properties'}",
