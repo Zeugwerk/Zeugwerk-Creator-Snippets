@@ -13,7 +13,7 @@
         "body": [
             "{attribute 'no_explicit_call' := 'This FB is a CLASS and must be accessed using methods and/or properties'}",
             "{attribute 'conditionalshow_all_locals'\\}",
-            "FUNCTION_BLOCK ${TM_FILENAME_BASE} IMPLEMENTS I${1:${TM_FILENAME_BASE}}",
+            "FUNCTION_BLOCK ${TM_FILENAME_BASE} IMPLEMENTS ${1:I${TM_FILENAME_BASE}}",
             "VAR",
             "  $2",
             "END_VAR"
