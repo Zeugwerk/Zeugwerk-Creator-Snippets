@@ -7,6 +7,17 @@
         ],
         "description": "attribute pragma"
     },
+    "class": {
+        "prefix": ["attribute","{attribute}"],
+        "scope" : "declaration",
+        "body": [
+            "{attribute 'no_explicit_call' := 'This FB is a CLASS and must be accessed using methods and/or properties'}",
+            "FUNCTION_BLOCK ${TM_FILENAME_BASE}",
+            "VAR",
+            "END_VAR"
+        ],
+        "description": "create a class"
+    },    
     "AT-Declaration": {
         "prefix": ["AT%*"],        
         "scope" : "declaration",        
