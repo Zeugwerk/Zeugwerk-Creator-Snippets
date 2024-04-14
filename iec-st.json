@@ -3,7 +3,7 @@
         "prefix": ["attribute","{attribute}"],
         "scope" : "declaration",
         "body": [
-            "\{attribute '${1|conditionalshow,conditionalshow_all_locals,const_replaced,enable_dynamic_creation,hide,hide_all_locals,noinit,obsolete,strict,qualified_only,to_string}'\}"
+            "{attribute '${1|conditionalshow,conditionalshow_all_locals,const_replaced,enable_dynamic_creation,hide,hide_all_locals,noinit,obsolete,strict,qualified_only,to_string}'\\}"
         ],
         "description": "attribute pragma"
     },
