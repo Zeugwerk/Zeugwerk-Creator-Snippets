@@ -7,7 +7,7 @@
         "description": "attribute pragma"
     },
     "attribute": {
-        "prefix": ["attribute*"],
+        "prefix": ["attribute","{attribute}"],
         "body": [
             "${1:variable} AT %${2|I,Q}* : ${3|BOOL,BYTE,WORD,DWORD,SINT,USINT,INT,UINT,DINT,UDINT,REAL};"
         ],
