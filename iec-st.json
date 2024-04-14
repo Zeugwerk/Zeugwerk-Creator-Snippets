@@ -15,6 +15,7 @@
             "{attribute 'conditionalshow_all_locals'\\}",
             "FUNCTION_BLOCK ${TM_FILENAME_BASE}",
             "VAR",
+            "  $1",
             "END_VAR"
         ],
         "description": "create a class"
