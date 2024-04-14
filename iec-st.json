@@ -3,7 +3,7 @@
         "prefix": ["attribute","{attribute}"],
         "scope" : "declaration",
         "body": [
-            "{attribute ${1|'conditionalshow','conditionalshow_all_locals','const_replaced','enable_dynamic_creation','hide','hide_all_locals','noinit','obsolete','strict','qualified_only','to_string','no_explicit_call' := 'This FB is a CLASS and must be accessed using methods and/or properties'}\\}"
+            "{attribute ${1|'conditionalshow','conditionalshow_all_locals','const_replaced','enable_dynamic_creation','hide','hide_all_locals','noinit','obsolete','strict','qualified_only','to_string','no_explicit_call' := 'This FB is a CLASS and must be accessed using methods and/or properties'}}"
         ],
         "description": "attribute pragma"
     },
@@ -11,7 +11,7 @@
         "prefix": ["class"],
         "scope" : "declaration",
         "body": [
-            "{attribute 'no_explicit_call' := 'This FB is a CLASS and must be accessed using methods and/or properties'\\}",
+            "{attribute 'no_explicit_call' := 'This FB is a CLASS and must be accessed using methods and/or properties'}",
             "{attribute 'conditionalshow_all_locals'\\}",
             "FUNCTION_BLOCK ${TM_FILENAME_BASE} EXTENDS $1 IMPLEMENTS $2",
             "VAR",
