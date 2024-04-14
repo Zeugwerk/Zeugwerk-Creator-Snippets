@@ -13,9 +13,9 @@
         "body": [
             "{attribute 'no_explicit_call' := 'This FB is a CLASS and must be accessed using methods and/or properties'\\}",
             "{attribute 'conditionalshow_all_locals'\\}",
-            "FUNCTION_BLOCK ${TM_FILENAME_BASE} EXTENDS $2 IMPLEMENTS $3",
+            "FUNCTION_BLOCK ${TM_FILENAME_BASE} EXTENDS $1 IMPLEMENTS $2",
             "VAR",
-            "  $1",
+            "  $3",
             "END_VAR"
         ],
         "description": "create a class"
