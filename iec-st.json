@@ -2,10 +2,17 @@
     "AT-Declaration": {
         "prefix": ["AT%*"],
         "body": [
+            "{attribute '${1|conditionalshow,conditionalshow_all_locals,const_replaced,enable_dynamic_creation,hide,hide_all_locals,noinit,obsolete,strict,qualified_only,to_string}'}"
+        ],
+        "description": "attribute pragma"
+    },
+    "attribute": {
+        "prefix": ["AT%*"],
+        "body": [
             "${1:variable} AT %${2|I,Q}* : ${3|BOOL,BYTE,WORD,DWORD,SINT,USINT,INT,UINT,DINT,UDINT,REAL};"
         ],
         "description": "Bind new project variable to a flexible address"
-    },    
+    },      
     "for": {
         "prefix": ["for"],
         "body": [
